@@ -6,7 +6,7 @@
 		</button>
 		<block wx:else>
 			<view class="userinfo">
-				<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+				<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" />
 
 				<text class="userinfo-nickname">
 					{{userInfo.nickName}}
@@ -20,5 +20,4 @@
 		<button>股票成本价计算</button>
 		<button>公积金查询</button>
 	</view>
-	
 </view>

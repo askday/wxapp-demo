@@ -1,38 +1,37 @@
 /**index.wxss**/
 
 .title {
-  flex: 1;
-  background-color: green;
+	flex: 1;
+	background-color: green;
 }
 
 .userinfo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
 }
 
 .userinfo-nickname {
-  color: #aaa;
-  background-color: red;
-  text-align: center;
-   width:90%;
-  margin:0 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  /* line-height: 90rpx; */
+	display: flex;
+	color: #aaa;
+	background-color: red;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
 }
 
 .content {
-  flex: 8;
-  width: 100vw;
-  background-color: blue;
+	flex: 8;
+	width: 100vw;
+	background-color: blue;
 }

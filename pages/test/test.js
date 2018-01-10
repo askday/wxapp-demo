@@ -38,8 +38,7 @@ Page({
 			this.setData({
 				name: 'wwww'
 			})
-		}
-		else if (id == 'naviBtn') {
+		} else if (id == 'naviBtn') {
 			wx.navigateTo({
 				url: '../test/test'
 			})

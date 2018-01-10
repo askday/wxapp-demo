@@ -1,50 +1,52 @@
 /* pages/test/test.wxss */
 
 .hover-class {
-  background-color: #123456;
-  color: white;
+	background-color: #123456;
+	color: white;
 }
 
 text {
-  color: green;
+	color: green;
 }
 
 #runBtn {
-  background-color: red;
+	background-color: red;
 }
 
 #naviBtn {
-  background-color: blue;
-  color: aliceblue;
-  font-size: 60rpx;
+	background-color: blue;
+	color: aliceblue;
+	font-size: 60rpx;
 }
 
 #item {
-  background-color: yellow;
+	background-color: yellow;
 }
 
 .controls {
-  position: relative;
-  top: 50%;
-  height: 50px;
-  margin-top: -25px;
-  display: flex;
+	position: relative;
+	top: 50%;
+	height: 50px;
+	margin-top: -25px;
+	display: flex;
 }
 
-.play, .pause, .time {
-  flex: 1;
-  height: 100%;
+.play,
+.pause,
+.time {
+	flex: 1;
+	height: 100%;
 }
 
 .time {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  line-height: 50px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	line-height: 50px;
 }
 
 .img {
-  width: 40px;
-  height: 40px;
-  margin: 5px auto;
+	width: 40px;
+	height: 40px;
+	margin: 5px auto;
 }

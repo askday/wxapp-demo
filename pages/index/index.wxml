@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+	<view class='title'>
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+			获取头像昵称
+		</button>
+		<block wx:else>
+			<view class="userinfo">
+				<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+
+				<text class="userinfo-nickname">
+					{{userInfo.nickName}}
+				</text>
+			</view>
+		</block>
+	</view>
+	<view class='content'>
+		<button>股票成本价计算</button>
+		<button>股票成本价计算</button>
+		<button>股票成本价计算</button>
+		<button>公积金查询</button>
+	</view>
+	
+</view>

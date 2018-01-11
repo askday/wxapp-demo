@@ -16,8 +16,10 @@
 			</view>
 		</view>
 		<view class='content'>
-			<view wx:for="{{func}}">
-				<button class='btn'>{{item}}</button>
+			<view class='row' wx:for="{{func}}" wx:for-index="i" wx:for-item="row">
+				<button class='btn' wx:for="{{row}}" wx:for-index="j" wx:for-item="column" bindtap="{{column.func}}" data-row="{{i}}" data-column="{{j}}">
+					{{column.title}}
+				</button>
 			</view>
 		</view>
 	</block>

@@ -7,7 +7,62 @@ Page({
 		userInfo: {},
 		hasUserInfo: false,
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
-		func: ['股票成本计算', '公积金查询', '个税计算', '理财收益计算']
+		func: [
+			[{
+					title: '股票成本计算',
+					func: 'onClick',
+					gotoPage: '../test/test'
+				},
+				{
+					title: '公积金查询',
+					func: 'onClick',
+					gotoPage: '../test/test'
+				},
+				{
+					title: '个税计算',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				},
+				{
+					title: '理财收益计算',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				}
+			],
+			[{
+					title: '股票成本计算',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				},
+				{
+					title: '公积金查询',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				},
+				{
+					title: '个税计算',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				},
+				{
+					title: '理财收益计算',
+					func: 'onClick',
+					gotoPage: '../test/test',
+				}
+			]
+		]
+	},
+
+	onClick: function (event) {
+		console.log(event)
+		let row = event.currentTarget.dataset.row
+		let column = event.currentTarget.dataset.column
+		console.log(row + '|' + column);
+		let nextPage = this.data.func[row][column].gotoPage
+		console.log(nextPage);
+		wx.navigateTo({
+			url: nextPage
+		})
 	},
 
 	onLoad: function () {

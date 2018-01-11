@@ -1,5 +1,6 @@
 /**app.wxss**/
 
+@import "./fonts/font-awesome.wxss";
 .container {
 	width: 100vw;
 	height: 100vh;

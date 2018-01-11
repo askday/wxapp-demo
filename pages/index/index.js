@@ -6,7 +6,8 @@ Page({
 	data: {
 		userInfo: {},
 		hasUserInfo: false,
-		canIUse: wx.canIUse('button.open-type.getUserInfo')
+		canIUse: wx.canIUse('button.open-type.getUserInfo'),
+		func: ['股票成本计算', '公积金查询', '个税计算', '理财收益计算']
 	},
 
 	onLoad: function () {
@@ -38,7 +39,6 @@ Page({
 		}
 	},
 	getUserInfo: function (e) {
-		console.log(e)
 		app.globalData.userInfo = e.detail.userInfo
 		this.setData({
 			userInfo: e.detail.userInfo,
